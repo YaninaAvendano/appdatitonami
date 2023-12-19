@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textDirection="firstStrongLtr"
+        tools:context=".Activity_registrar_rec">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="149dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="813dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <TextView
+            android:id="@+id/TITULO"
+            android:layout_width="326dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="112dp"
+            android:background="#CD9675"
+            android:text="¿QUÉ NUEVA RECETA TIENES HOY?"
+            android:textAlignment="center"
+            android:textColor="#070505"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toTopOf="@+id/guideline21" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="101dp"
+            android:layout_height="94dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toTopOf="@+id/guideline21"
+            app:srcCompat="@drawable/logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_nombre_rec"
+            android:layout_width="330dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="28dp"
+            android:background="#CDB38C"
+            android:hint="NOMBRE DE RECETA"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toBottomOf="@+id/TITULO">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_nom_rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_paso"
+            android:layout_width="334dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:background="#CDB38C"
+            android:hint="DETALLES DE RECETA"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toBottomOf="@+id/til_ing">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_paso"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_regis_rec"
+            android:layout_width="157dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#802A2A"
+            android:drawableLeft="@drawable/baseline_save_24"
+            android:text="REGISTRAR RECETA"
+            app:layout_constraintBottom_toTopOf="@+id/guideline22"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintTop_toBottomOf="@+id/btn_img"
+            app:layout_constraintVertical_bias="0.709" />
+
+        <Button
+            android:id="@+id/btn_img"
+            android:layout_width="137dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="#802A2A"
+            android:drawableBottom="@drawable/baseline_upload_24"
+            android:text="IMG"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toBottomOf="@+id/til_paso" />
+
+        <ImageView
+            android:id="@+id/iv_receta"
+            android:layout_width="187dp"
+            android:layout_height="149dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_img"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toBottomOf="@+id/til_paso"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Spinner
+            android:id="@+id/sp_tiporec"
+            android:layout_width="324dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:background="#CDB38C"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toBottomOf="@+id/til_nombre_rec" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_ing"
+            android:layout_width="322dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="28dp"
+            android:background="#CDB38C"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toBottomOf="@+id/sp_tiporec">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_ing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="INGREDIENTES DE RECETA" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

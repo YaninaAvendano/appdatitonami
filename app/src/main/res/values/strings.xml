@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">appdatitonami</string>
+    <string name="bienvenidos_al_mejor_recetario_donde_podr_s_compartir_y_buscar_las_mejores_recetas_para_ese_momento_especial">¡Bienvenidos al mejor recetario! ¡Donde podrás compartir y buscar las mejores recetas para ese momento especial!</string>
+    <string name="usuario">USUARIO</string>
+    <string name="password">PASSWORD</string>
+    <string name="iniciar_sesion">INICIAR SESION</string>
+    <string name="registro_nuevo_usuario">REGISTRO NUEVO USUARIO</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!--Variables formularios provisorios -->
+
+</resources>

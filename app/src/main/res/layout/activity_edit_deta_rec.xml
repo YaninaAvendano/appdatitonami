@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:textAlignment="center">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="140dp"
+        android:textAlignment="center"
+        tools:context=".Activity_edit_deta_rec">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.89" />
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="152dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#802A2A"
+            android:drawableLeft="@drawable/baseline_delete_24"
+            android:text="Eliminar Receta"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+            app:layout_constraintTop_toBottomOf="@+id/til_pasos_edit" />
+
+        <Button
+            android:id="@+id/btn_save_modi"
+            android:layout_width="161dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#802A2A"
+            android:drawableLeft="@drawable/baseline_save_24"
+            android:text="modificar"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+            app:layout_constraintHorizontal_bias="0.335"
+            app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintTop_toBottomOf="@+id/btn_del" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_titulo_edit"
+            android:layout_width="315dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintTop_toTopOf="@+id/guideline45">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="315dp"
+                android:layout_height="55dp"
+                android:background="#D1A379"
+                android:hint="Titulo de receta" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_ing_edit"
+            android:layout_width="314dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="8dp"
+            android:background="#D1A379"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintTop_toBottomOf="@+id/sp_tipo_edit">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:hint="Ingredientes de receta" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/sp_tipo_edit"
+            android:layout_width="308dp"
+            android:layout_height="64dp"
+            android:background="#D1A379"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+            app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintTop_toBottomOf="@+id/til_titulo_edit" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_pasos_edit"
+            android:layout_width="296dp"
+            android:layout_height="222dp"
+            android:layout_marginTop="36dp"
+            android:background="#D1A379"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintTop_toBottomOf="@+id/til_ing_edit">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:hint="Detalle de pasos" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="51dp"
+            android:layout_height="28dp"
+            android:text="id"
+            app:layout_constraintBottom_toTopOf="@+id/til_titulo_edit"
+            app:layout_constraintStart_toStartOf="@+id/guideline47" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

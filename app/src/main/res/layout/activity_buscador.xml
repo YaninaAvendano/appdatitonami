@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="multiply"
+    android:textAlignment="center"
+    android:textDirection="firstStrongRtl">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo"
+        android:contextClickable="false"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="170dp"
+        tools:context=".Activity_buscador">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="42dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="675dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.91" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="137dp"
+            android:layout_height="131dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toTopOf="@+id/guideline17"
+            app:srcCompat="@drawable/logo" />
+
+        <ListView
+            android:id="@+id/list_rec"
+            android:layout_width="299dp"
+            android:layout_height="387dp"
+            android:layout_marginBottom="172dp"
+            android:background="#8E443D"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline19" />
+
+        <TextView
+            android:id="@+id/tv_titulo_sp"
+            android:layout_width="293dp"
+            android:layout_height="46dp"
+            android:background="#D1A379"
+            android:text="BUSCA EL TIPO DE RECETA QUE DESEAS"
+            android:textAlignment="center"
+            android:textColor="#0C0909"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <Spinner
+            android:id="@+id/sp_menu_tip_rec"
+            android:layout_width="299dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTintMode="add"
+            android:contextClickable="true"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/list_rec"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titulo_sp"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Activity_menu">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="156dp"
+        android:layout_height="167dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="@+id/guideline13"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_menu_q"
+        android:layout_width="325dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:background="#CD9675"
+        android:capitalize="none"
+        android:text="¿Que deseas hacer hoy? Selecciona una opción, por favor"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#050303"
+        android:textColorHint="#040202"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="260dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#802A2A"
+        android:drawableLeft="@drawable/baseline_cookie_24"
+        android:drawableRight="@drawable/baseline_manage_search_24"
+        android:text="Buscar Receta"
+        android:textDirection="firstStrongRtl"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        app:iconPadding="15dp"
+        app:iconSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/tv_menu_q" />
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="260dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#802A2A"
+        android:drawableLeft="@drawable/baseline_cookie_24"
+        android:drawableRight="@drawable/baseline_menu_book_24"
+        android:text="Registrar Receta"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar" />
+
+    <Button
+        android:id="@+id/btn_editar"
+        android:layout_width="260dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#802A2A"
+        android:drawableLeft="@drawable/baseline_cookie_24"
+        android:drawableRight="@drawable/baseline_edit_note_24"
+        android:text="Editar Receta"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registrar" />
+
+    <TextView
+        android:id="@+id/tv_bienvenido"
+        android:layout_width="131dp"
+        android:layout_height="32dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#130C0C"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_menu_q"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

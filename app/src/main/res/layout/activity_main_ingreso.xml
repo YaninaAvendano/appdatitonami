@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scv_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/f_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        android:isScrollContainer="true"
+        android:keepScreenOn="true"
+        android:paddingVertical="150dp"
+        tools:context=".Activity_main_ingreso">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="323dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:background="#CD9675"
+            android:text="@string/bienvenidos_al_mejor_recetario_donde_podr_s_compartir_y_buscar_las_mejores_recetas_para_ese_momento_especial"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#090707"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/logo_inicio"
+            tools:ignore="UnknownId" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.89" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1.0" />
+
+        <ImageView
+            android:id="@+id/logo_inicio"
+            android:layout_width="142dp"
+            android:layout_height="138dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/todo"
+            android:focusable="auto"
+            android:outlineProvider="bounds"
+            android:scaleType="fitStart"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:srcCompat="@drawable/logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_ingreso_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titulo"
+            app:startIconDrawable="@drawable/baseline_person_2_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_usuario"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="#CDB38C"
+                android:hint="@string/usuario" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_ingreso_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/sw_menu_rm"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/baseline_lock_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_pass"
+                android:layout_width="338dp"
+                android:layout_height="63dp"
+                android:background="#CDB38C"
+                android:hint="@string/password"
+                android:password="true"
+                tools:ignore="Deprecated" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_in"
+            android:layout_width="197dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#802A2A"
+            android:text="@string/iniciar_sesion"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/til_ingreso_pass" />
+
+        <Button
+            android:id="@+id/btn_regis_user"
+            android:layout_width="186dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#802A2A"
+            android:text="@string/registro_nuevo_usuario"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/btn_in" />
+
+        <Switch
+            android:id="@+id/sw_menu_rm"
+            android:layout_width="203dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="#CD9675"
+            android:checked="true"
+            android:text="Recordar Usuario"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/til_ingreso_user" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

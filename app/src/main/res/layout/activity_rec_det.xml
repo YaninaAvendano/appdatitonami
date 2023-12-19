@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activity_rec_det">
+
+        <TextView
+            android:id="@+id/tv_paso"
+            android:layout_width="318dp"
+            android:layout_height="324dp"
+            android:layout_marginTop="40dp"
+            android:background="#D1A379"
+            android:text="1. añade todos los ingredientes, excepto la harina, y bátelos bien. Por otra parte, precalienta el horno a 180º C.                                                                                2.Cuando tengas todos los ingredientes mezclados, incorpora la harina tamizada poco a poco y sin dejar de batir.                                                            3.Una vez tengas la masa del bizcocho de zanahoria lista, unta un poco de mantequilla en un molde apto para horno, o espolvorea harina, y vierte en él la masa. Hornea el queque casero durante 40 minutos, aproximadamente.                                                              4.Para saber si está listo, pínchalo con un palillo. Si sale limpio, ya puedes retirarlo. Deja que se enfríe y desmóldalo."
+            android:textColor="#0C0606"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView10"
+            app:layout_constraintEnd_toStartOf="@+id/guideline36"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline35"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ing_det_edit2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_ing_det_edit2"
+            android:layout_width="309dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="72dp"
+            android:background="#D1A379"
+            android:text="*2-taza-azucar*      *4-uni-huevos*      *3-taza-zanahoria rallada*       *2-taza-harina*      *1-cdta-bicarbonato*      *2-cdta-canela en polvo*       *1-cdta-polvo de hornear*     *1-pizca-sal*"
+            android:textAlignment="center"
+            android:textColor="#090404"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline36"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="@+id/guideline35"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="843dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            android:background="#D1A379"
+            android:text="QUEQUE DE ZANAHORIA"
+            android:textAlignment="center"
+            android:textColor="#0E0C0A"
+            app:layout_constraintEnd_toStartOf="@+id/guideline36"
+            app:layout_constraintTop_toTopOf="@+id/guideline33" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="318dp"
+            android:layout_height="139dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="76dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline34"
+            app:layout_constraintEnd_toStartOf="@+id/guideline36"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline35"
+            app:srcCompat="@drawable/quequezana" />
+
+        <Button
+            android:id="@+id/btn_volver_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#802A2A"
+            android:drawableLeft="@drawable/baseline_keyboard_backspace_24"
+            android:text="Volver menú principal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline36" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

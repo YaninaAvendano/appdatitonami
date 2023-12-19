@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- COLORES PERSONALIZADOS -->
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryVariant">#CF7B00</color>
+    <color name="colorSecondary">#FFFFFFFF</color>
+    <color name="colorSecondaryVariant">#FFFFFFFF</color>
+    <color name="colorBackground">#607D8B</color>
+    <color name="colorSurface">#FF9800</color>
+    <color name="colorError">#FF9800</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#212121</color>
+    <color name="colorOnBackground">#607D8B</color>
+    <color name="colorOnSurface">#FF9800</color>
+    <color name="colorOnError">#FFFFFFFF</color>
+    <color name="deleteColor">#E91E63</color>
+    <color name="archiveColor">#009688</color>
+
+</resources>
